@@ -1,0 +1,132 @@
+h1,
+p {
+  font-family: Lato;
+}
+a {
+  text-decoration: none;
+  color: gray;
+}
+/* Navbar Area */
+.buttonUpload {
+  display: flex;
+  color: white;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.formSearch {
+  display: flex;
+}
+
+@media only screen and (max-width: 425px) {
+  .formSearch {
+    display: none;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    gap: 6rem;
+  }
+}
+
+/* Content Area */
+/* .contentGallery {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-auto-rows: 170px;
+  grid-auto-flow: dense;
+  grid-gap: 20px;
+} */
+.contentBox {
+  height:250px ;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+/* .contentBox:nth-child(6n + 1) {
+  grid-column: span 2;
+  grid-row: span 2;
+} */
+.contentBox img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+.contentBox:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.overlay {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  opacity: 0.5;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+}
+.sugestBox:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 425px) {
+  .contentGallery {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .sugestBox {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .leftCaption {
+    text-align: right;
+  }
+}
+
+/* Footer Area */
+.footer {
+  border-top: 2px solid #dee2e6;
+}
+.footerContent {
+  padding-left: 12px;
+}
+.twitter,
+.linkedin,
+.facebook {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  border: 1px solid #0d6efd;
+}
+.twitter,
+.linkedin,
+.facebook span {
+  font-size: 25px;
+}
+.twitter,
+.linkedin,
+.facebook :hover {
+  cursor: pointer;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
